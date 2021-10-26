@@ -14,28 +14,34 @@ const invioJs = document.getElementById("invio");
 
 
 let emailinLista = 0;
-
-
+// console.log(emailinLista);
+let emailInserita = emailDaInserire.value;
 invioJs.addEventListener ("click",
     function (){
-        
-        let emailInserita = emailDaInserire.value;
-        console.log(emailInserita);
 
-        for ( let i = 0; i < listaMail.length ; i++) {
-            
-            if ( emailInserita === listaMail[i]){
-                emailinLista = 1;
-            } 
+    emailInserita = emailDaInserire.value;
+    // console.log(emailInserita);
+    
+    for (let i=0; i < listaMail.length ; i++ ){
+        // console.log(listaMail[i]);
+        if (emailInserita === listaMail[i]) {
+            emailinLista = 1;
+            console.log(emailinLista);
         }
-        if ( emailinLista === 1 ) {
-            festaJs.innerHTML=`Complimenti, sei nella lista! `;
-        } else {
-            festaJs.innerHTML=`Mi dispiace non sei nella lista `;
-        }
-        
     }
+    if ( emailinLista === 1 ) {
+        festaJs.innerHTML= `Complimenti ! La tua mail è inserita nella lista `;
+    } else {
+        festaJs.innerHTML=`Purtroppo non sei in lista`;
+    }
+    }
+    
 )
+
+
+       
+        
+
 
 
         

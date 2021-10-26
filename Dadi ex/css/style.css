@@ -1,0 +1,17 @@
+#genera_mn{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+#genera_pcn{
+    padding: 10px 20px;
+    background-color: rgb(255, 81, 0);
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 10px 10px 10px 10px black;
+}

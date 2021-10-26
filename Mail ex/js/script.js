@@ -13,30 +13,39 @@ let emailDaInserire = document.getElementById("inserisci_mail");
 const invioJs = document.getElementById("invio");
 
 
-invioJs.addEventListener("click",
-       function() {
+let emailinLista = 0;
+
+
+invioJs.addEventListener ("click",
+    function (){
+        
         let emailInserita = emailDaInserire.value;
         console.log(emailInserita);
-        for ( i=0; i < listaMail.length; i++ ) {
-            // console.log(listaMail[i]);
-            if ( emailInserita === listaMail[i] ) {
-                
-                festaJs.innerHTML= `Complimenti sei inserito nella lista !`
-        
-                // Se la sua mail non combacia con quella presente nella array allora stamperò l esito negativo dell accesso 
-                
-            } else {
-                // console.log("non ci sei");
-                festaJs.innerHTML=`Purtroppo non sei inserito nella lista`
-            }
+
+        for ( let i = 0; i < listaMail.length ; i++) {
+            
+            if ( emailInserita === listaMail[i]){
+                emailinLista = 1;
+            } 
         }
-       }
+        if ( emailinLista === 1 ) {
+            festaJs.innerHTML=`Complimenti, sei nella lista! `;
+        } else {
+            festaJs.innerHTML=`Mi dispiace non sei nella lista `;
+        }
+        
+    }
 )
 
 
-
-
-// Chiedo all utente di inserire la sua mail 
-// let inserisciMail = prompt("inserisci qui la tua mail");
-// Se la sua mail corrisponde a una mail presente nella array allora stamperò l esito positivo dell accesso 
+        
+    //   for ( i = 0; i < listaMail.length ; i++) {
+    //         if (emailInserita === listaMail[i]){
+    //             emailinLista = 1;
+    //             console.log(emailinLista);
+    //         } else {
+    //             emailinLista = 1;
+    //             console.log(emailinLista);
+    //         }
+    //     }
 

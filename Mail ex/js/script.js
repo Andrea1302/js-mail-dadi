@@ -12,13 +12,13 @@ let festaJs = document.getElementById("festa");
 let emailDaInserire = document.getElementById("inserisci_mail");
 const invioJs = document.getElementById("invio");
 
+// Valore non  trovato partenza
 
-let emailinLista = 0;
 // console.log(emailinLista);
 let emailInserita = emailDaInserire.value;
 invioJs.addEventListener ("click",
     function (){
-
+    let emailinLista = 0;
     emailInserita = emailDaInserire.value;
     // console.log(emailInserita);
     
@@ -29,17 +29,16 @@ invioJs.addEventListener ("click",
             console.log(emailinLista);
         }
     }
+
     if ( emailinLista === 1 ) {
         festaJs.innerHTML= `Complimenti ! La tua mail è inserita nella lista `;
     } else {
         festaJs.innerHTML=`Purtroppo non sei in lista`;
     }
-    }
-    
+}  
 )
 
 
-       
         
 
 

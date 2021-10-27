@@ -15,11 +15,11 @@ bottoneNumber.addEventListener("click",
 
     let numUtente = Math.floor(Math.random()*6) + 1;
     console.log(numUtente);
-    mioNumeroRandom.innerHTML= `il tuo numero è: ${numUtente}`;;
+    mioNumeroRandom.innerHTML= `${numUtente}`;
     
     let numPc = Math.floor(Math.random()*6) + 1;
     console.log(numPc);
-    numeroPcRandom.innerHTML=`il numero del pc è: ${numPc}`;
+    numeroPcRandom.innerHTML=`${numPc}`;
     if ( numUtente < numPc ) {
         risultatoFinale.innerHTML="Hai perso";
     } else if ( numUtente === numPc) {   

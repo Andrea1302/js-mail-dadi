@@ -30,3 +30,23 @@
 #mio_numero, #numero_pc{
     font-size: 50px;
 }
+#mio_numero_style {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
+#numero_pc_style{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}

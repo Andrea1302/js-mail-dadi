@@ -12,12 +12,12 @@ let festaJs = document.getElementById("festa");
 let emailDaInserire = document.getElementById("inserisci_mail");
 const invioJs = document.getElementById("invio");
 
-// Valore non  trovato partenza
 
 // console.log(emailinLista);
 let emailInserita = emailDaInserire.value;
 invioJs.addEventListener ("click",
     function (){
+    // Valore non  trovato partenza 
     let emailinLista = 0;
     emailInserita = emailDaInserire.value;
     // console.log(emailInserita);

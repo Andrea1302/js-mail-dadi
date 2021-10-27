@@ -12,14 +12,11 @@ let festaJs = document.getElementById("festa");
 let emailDaInserire = document.getElementById("inserisci_mail");
 const invioJs = document.getElementById("invio");
 
-
-// console.log(emailinLista);
-let emailInserita = emailDaInserire.value;
 invioJs.addEventListener ("click",
     function (){
     // Valore non  trovato partenza 
     let emailinLista = 0;
-    emailInserita = emailDaInserire.value;
+    let emailInserita = emailDaInserire.value;
     // console.log(emailInserita);
     
     for (let i=0; i < listaMail.length ; i++ ){
@@ -37,20 +34,3 @@ invioJs.addEventListener ("click",
     }
 }  
 )
-
-
-        
-
-
-
-        
-    //   for ( i = 0; i < listaMail.length ; i++) {
-    //         if (emailInserita === listaMail[i]){
-    //             emailinLista = 1;
-    //             console.log(emailinLista);
-    //         } else {
-    //             emailinLista = 1;
-    //             console.log(emailinLista);
-    //         }
-    //     }
-

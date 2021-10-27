@@ -20,13 +20,13 @@ bottoneNumber.addEventListener("click",
     let numPc = Math.floor(Math.random()*6) + 1;
     console.log(numPc);
     numeroPcRandom.innerHTML=`${numPc}`;
-    if ( numUtente < numPc ) {
-        risultatoFinale.innerHTML="Hai perso";
-    } else if ( numUtente === numPc) {   
-        risultatoFinale.innerHTML="La partita termina con un pareggio";
-    } else {
-        risultatoFinale.innerHTML="Hai vinto !";
-    }
+        if ( numUtente < numPc ) {
+            risultatoFinale.innerHTML="Hai perso";
+        } else if ( numUtente === numPc) {   
+            risultatoFinale.innerHTML="La partita termina con un pareggio";
+        } else {
+            risultatoFinale.innerHTML="Hai vinto !";
+        }
     }
 
 )
